@@ -23,3 +23,13 @@ for i in range(0,69):
     for line in firstfile:
         secondfile.write(line)
 print('completed')
+
+##Creating multiple blank text files
+file_name=""
+for iterator in range (1,11,1):
+    file_name1="clim_1_"+str(iterator)+".day"
+    file=open(file_name1, 'x')
+
+print("created", iterator+1, " files")
+
+
