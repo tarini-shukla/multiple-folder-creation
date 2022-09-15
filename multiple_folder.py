@@ -16,3 +16,10 @@ for i in range (0,69):
 
 print(' folder completed')
 
+## adding text files in the newly created folders
+## copy content of one text files in selected folder and files
+for i in range(0,69):
+ with open('C:\\TDATA\\2021\\DNDC_2021_FTs.txt', 'r') as firstfile, open('C:\\TDATA\\WaterTable\\Huger_' +str(i)+'\\Huger_'+str(i)+'_0_2021.txt', 'w') as secondfile:
+    for line in firstfile:
+        secondfile.write(line)
+print('completed')
